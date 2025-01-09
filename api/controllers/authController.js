@@ -44,7 +44,7 @@ export const login = async (req, res, next) => {
                 success: false,
                 message: "Invalid credentials",
             });
-        }
+        }   
 
         // Check if password is correct
         const validPassword = await bcrypt.compare(password, user.password);
