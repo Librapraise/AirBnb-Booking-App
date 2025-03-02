@@ -39,12 +39,12 @@ This is a full-stack web application for booking vacation rentals, inspired by A
    ```
 3. Install dependencies for the frontend:
    ```bash
-   cd frontend
+   cd client
    npm install
    ```
 4. Install dependencies for the backend:
    ```bash
-   cd backend
+   cd api
    npm install
    ```
 5. Set up environment variables for API keys and database connections.
