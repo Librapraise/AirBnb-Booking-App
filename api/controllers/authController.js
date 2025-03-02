@@ -68,10 +68,11 @@ export const login = async (req, res, next) => {
                 secure: true,
                 sameSite: "none",
             }).status(200).json({
-            ...otherDetails,
+            details: {...otherDetails},
+            isAdmin
             // success: true,
             // message: "User logged in successfully",
-        });
+            });
     } catch (err) {
         next(err);
     }
